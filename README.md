@@ -8,13 +8,13 @@
 - No installs to run, no PowerShell modules to install, no global symlinks to set, to shenanigans with the Windows Registry. No commitments.
 - Have fun.
 
-If you are using the 32 bit Node distribution on Windows, WTF are you doing with that crap?
+If you are using the 32 bit Node distribution on Windows, what are you doing with that crap?
 
 ## Setup
 
 ### Node Extract Directory
 
-This is the folder you choose to download Node Windows binary distributions. These are just .zip files. Remember, no installers. To find these click the *Other Downloads* link uner the *LTS* or *Current* download buttons on [Node.js](https://nodejs.org/). You can find earlier versions than the current LTS by scrolling down and finding the *Previous Releases* link.
+This is the folder you choose to download Node Windows binary distributions. These are just .zip files. Remember, no installers. To find these click the *Other Downloads* link under the *LTS* or *Current* download buttons on [Node.js](https://nodejs.org/). You can find earlier versions than the current LTS by scrolling down and finding the *Previous Releases* link.
 
 The folder that you select to download and extract the binary distributions we'll refer to as the *Node Extract* directory.
 
@@ -24,7 +24,7 @@ This is where you download the latest zip archive of NomadicNomad. Extract that 
 
 ### node-version.txt File
 
-Rename the *node-version.example.txt* file to *node-version.txt* files and edit the top line to match the version of the node binary distribution you downloaded and extracted in the *Node Extracts* folder. Just use the *major.minor.patch* version number, example version are in the file. The top line is the active version, any underneath just there for your reference.
+Rename the *node-version.example.txt* file to *node-version.txt* files and edit the top line to match the version of the node binary distribution you downloaded and extracted in the *Node Extracts* folder you wish to use. Just use the *major.minor.patch* version number, example version are in the file. The top line is the active version, any underneath just there for your reference.
 
 ### note-parent-dir.txt File
 
@@ -46,3 +46,7 @@ The *node_console* shortcut opens up a PowerShell console with the Node version 
 The *node_vscode* shortcut opens up Visual Studio code with Node in the path.
 
 From a PowerShell console, run the *nodePw.ps1* script to activate the Node using the version in the first line of *node-version.txt*. You can also dot source the *nodeEnv.ps1* passing in the desired version of Node to activate.
+
+## Making Things Flexible
+
+The flexibility comes with being able to setup NomadicNode in multiple directories, creating shortcuts that launch different version of Node. Also, using the *nodeEnv.ps1* script from PowerShell, you can activate any version of Node you wish.
