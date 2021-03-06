@@ -38,3 +38,6 @@ in the top line of the file.
 ### Generating Shortcuts
 
 Run the myshortcuts.ps1 script to create shortcuts for launching VSCode and PowerShell, the shortcuts will be in the *NomadicNode* directory.
+
+## Usage
+
