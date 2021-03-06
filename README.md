@@ -41,3 +41,8 @@ Run the myshortcuts.ps1 script to create shortcuts for launching VSCode and Powe
 
 ## Usage
 
+The *node_console* shortcut opens up a PowerShell console with the Node version in the first line of the *node-version.txt* file.
+
+The *node_vscode* shortcut opens up Visual Studio code with Node in the path.
+
+From a PowerShell console, run the *nodePw.ps1* script to activate the Node using the version in the first line of *node-version.txt*. You can also dot source the *nodeEnv.ps1* passing in the desired version of Node to activate.

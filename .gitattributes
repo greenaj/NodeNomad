@@ -1,0 +1,5 @@
+*.txt              text eol=crlf
+*.ps1              text eol=crlf
+*.md               text eol=crlf
+*.sh               text eol=lf
+build/version.txt  text eol=lf
