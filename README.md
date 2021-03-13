@@ -37,7 +37,17 @@ in the top line of the file.
 
 ### Generating Shortcuts
 
-Run the myshortcuts.ps1 script to create shortcuts for launching VSCode and PowerShell, the shortcuts will be in the *NodeNomad* directory.
+Run the *myshortcuts.ps1* script to create shortcuts for launching VSCode and PowerShell, the shortcuts will be in the *NodeNomad* directory.
+
+### Upgrading NPM
+
+To upgrade the version of NPM for your active version of Node, run the *updatenpm.ps1* script from within the *NodeNomad* folder. You will have needed to have used the *node_console* shortcut or activated the desired version of Node by dot sourcing *nodeEnv.ps1* or *nodePw.ps1* script from within a PowerShell console.
+
+```console
+PS> ./updatenpm.ps1
+```
+
+
 
 ## Usage
 
